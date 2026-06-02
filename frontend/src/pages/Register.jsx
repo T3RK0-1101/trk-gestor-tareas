@@ -25,7 +25,7 @@ export default function Register() {
 
       <div className="w-full max-w-md px-6">
         <div className="text-center mb-8">
-          <img src="/src/assets/logo.svg" alt="logo" className="w-16 h-16 mx-auto" />
+          <img src="/logo.svg" alt="logo" className="w-16 h-16 mx-auto" />
           <h1 className="text-2xl font-bold text-white mt-2 tracking-wide">Gestor de Tareas</h1>
           <p className="text-[#5c5475] text-sm mt-1">Crea tu cuenta para comenzar</p>
         </div>
