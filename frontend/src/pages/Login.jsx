@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import api from '../services/api';
+import logo from '../assets/logo.svg';
 
 export default function Login() {
   const [email, setEmail] = useState('');
@@ -26,7 +27,7 @@ export default function Login() {
 
       <div className="w-full max-w-md px-6">
         <div className="text-center mb-8">
-          <img src="/src/assets/logo.svg" alt="logo" className="w-16 h-16 mx-auto" />
+          <img src={logo} alt="logo" className="w-16 h-16 mx-auto" />
           <h1 className="text-2xl font-bold text-white mt-2 tracking-wide">Gestor de Tareas</h1>
           <p className="text-[#5c5475] text-sm mt-1">Inicia sesión para continuar</p>
         </div>

@@ -1,4 +1,5 @@
 import { useNavigate, useLocation } from 'react-router-dom';
+import logo from '../assets/logo.svg';
 
 export default function Sidebar() {
   const navigate = useNavigate();
@@ -25,7 +26,7 @@ export default function Sidebar() {
 
       <div className="px-5 py-6 border-b border-[#2e2e3d]">
         <div className="flex items-center gap-2">
-          <img src="/src/assets/logo.svg" alt="logo" className="w-7 h-7" />
+          <img src={logo} alt="logo" className="w-7 h-7" />
           <span className="text-white font-bold tracking-wide text-sm">Gestor de Tareas</span>
         </div>
         <p className="text-[#5c5475] text-xs mt-3">Hola, <span className="text-[#a99cc2] font-semibold">{usuario?.nombre}</span></p>
