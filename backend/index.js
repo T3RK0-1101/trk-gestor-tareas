@@ -9,10 +9,7 @@ const consejosRoutes = require('./routes/consejos.routes');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-app.use(cors({
-  origin: 'https://trk-gestor-tareas.vercel.app',
-  credentials: true
-}));
+app.use(cors());
 app.use(express.json());
 
 app.use('/auth', authRoutes);
